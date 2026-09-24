@@ -1,186 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sky Express & Solution | Security, Computer & Web Services Kuala Lumpur</title>
-  <meta name="description" content="Professional CCTV, door access, alarm systems, PC assembly, and web development services in Chow Kit, Kuala Lumpur.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sky Express & Solution | Security, PC & Web Solutions in Kuala Lumpur</title>
+  <meta name="description" content="Professional CCTV installation, door access systems, security alarms, PC assembly, and web development services in Chow Kit, Kuala Lumpur." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+<body>
 
-  <!-- Navigation -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="text-2xl font-black text-slate-900 tracking-tight">
-        SKY EXPRESS <span class="text-blue-600">&</span> SOLUTION
-      </a>
-      <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
-        <a href="index.html" class="text-blue-600">Home</a>
-        <a href="about.html" class="hover:text-blue-600">About</a>
-        <a href="services.html" class="hover:text-blue-600">Services</a>
-        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-      </nav>
-      <div class="hidden md:flex items-center space-x-4">
-        <a href="https://wa.me/8754081311" target="_blank" class="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1.5">
-          <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp
-        </a>
-        <a href="booking.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold shadow-sm transition">
-          Book a Service
-        </a>
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span><i class="fa-solid fa-location-dot"></i> Chow Kit, Kuala Lumpur, Malaysia</span>
+      <div class="top-links">
+        <a href="tel:8754081311"><i class="fa-solid fa-phone"></i> +8754081311</a>
+        <a href="mailto:skyexpresssolution@gmail.com"><i class="fa-solid fa-envelope"></i> skyexpresssolution@gmail.com</a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-700" aria-label="Toggle navigation">
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark"><i class="fa-solid fa-shield-halved"></i></span>
+        <div class="logo-text">
+          <span class="brand-title">Sky Express & Solution</span>
+          <span class="brand-sub">Security & Tech Services</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
-    </div>
-    <!-- Mobile dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-3 font-medium text-slate-700">
-      <a href="index.html" class="block text-blue-600">Home</a>
-      <a href="about.html" class="block">About</a>
-      <a href="services.html" class="block">Services</a>
-      <a href="faq.html" class="block">FAQ</a>
-      <a href="contact.html" class="block">Contact</a>
-      <a href="booking.html" class="block text-center bg-blue-600 text-white py-2 rounded-lg font-semibold mt-2">Book a Service</a>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#booking" class="nav-link">Book a Service</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#booking" class="btn btn-primary header-btn">Book Appointment</a>
+      </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-slate-900 text-white py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-      <span class="text-blue-400 font-semibold tracking-wider uppercase text-sm">Chow Kit, Kuala Lumpur</span>
-      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-3 mb-6">
-        Security, Computer & Web Solutions for Your Home and Business
-      </h1>
-      <p class="text-slate-300 text-lg sm:text-xl mb-8 leading-relaxed">
-        From CCTV and biometric access to custom PC builds and responsive websites, we provide practical, professional support across Kuala Lumpur.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="booking.html" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-bold shadow-md transition">
-          Book a Service
-        </a>
-        <a href="https://wa.me/8754081311?text=Hi%20Sky%20Express%20%26%20Solution,%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-lg font-bold shadow-md transition flex items-center justify-center gap-2">
-          <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Us
-        </a>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">Trusted Security & Computer Experts</div>
+        <h1>Complete Security, IT Hardware & Web Solutions in Kuala Lumpur</h1>
+        <p>From HD CCTV setups and biometric door access to custom gaming/workstation rigs and high-performance websites, we deliver reliable on-site solutions across Chow Kit and Klang Valley.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Book a Service</a>
+          <a href="https://wa.me/8754081311?text=Hi%20Sky%20Express%20%26%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+        <div class="trust-points">
+          <span><i class="fa-solid fa-check"></i> On-Site Surveys</span>
+          <span><i class="fa-solid fa-check"></i> Certified Hardware</span>
+          <span><i class="fa-solid fa-check"></i> Prompt Support</span>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Services Grid -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-slate-900">Our Core Services</h2>
-        <p class="text-slate-600 mt-3">Reliable hardware installations, system upgrades, and digital solutions.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- CCTV -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-video"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">CCTV Camera</h3>
-          <p class="text-slate-600 text-sm mb-4">CCTV installation, configuration, replacement, maintenance, and related security-camera services.</p>
-          <a href="services.html#cctv" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-        </div>
-        <!-- Door Access -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-door-closed"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Door Access</h3>
-          <p class="text-slate-600 text-sm mb-4">Door access-control solutions, installation, configuration, repair, and ongoing maintenance.</p>
-          <a href="services.html#door-access" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-        </div>
-        <!-- Alarm -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-bell"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Alarm System</h3>
-          <p class="text-slate-600 text-sm mb-4">Security alarm installation, setup, troubleshooting, maintenance, and system upgrades.</p>
-          <a href="services.html#alarm" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-        </div>
-        <!-- PC Assembly -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-desktop"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">PC Assembly & OS</h3>
-          <p class="text-slate-600 text-sm mb-4">Custom PC assembly, hardware installation, operating-system installation, and basic setup.</p>
-          <a href="services.html#pc-assembly" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-        </div>
-        <!-- Web App -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-code"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Web Applications</h3>
-          <p class="text-slate-600 text-sm mb-4">Custom web applications built for business workflows, internal management, and organizations.</p>
-          <a href="services.html#web-dev" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-        </div>
-        <!-- Websites -->
-        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 hover:shadow-md transition">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-globe"></i></div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Website Development</h3>
-          <p class="text-slate-600 text-sm mb-4">Business websites, landing pages, and responsive web pages designed to generate customer enquiries.</p>
-          <a href="services.html#web-dev" class="text-blue-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
+      <div class="hero-card">
+        <div class="quick-card">
+          <h3>Need Fast Assistance?</h3>
+          <p>Book a qualified technician for inspection, installation, or repair today.</p>
+          <ul class="quick-list">
+            <li><i class="fa-solid fa-video"></i> CCTV & Surveillance</li>
+            <li><i class="fa-solid fa-fingerprint"></i> Biometric Door Access</li>
+            <li><i class="fa-solid fa-bell"></i> Security Alarm Installations</li>
+            <li><i class="fa-solid fa-desktop"></i> PC Assembly & OS Repairs</li>
+            <li><i class="fa-solid fa-code"></i> Business Web Solutions</li>
+          </ul>
+          <a href="#booking" class="btn btn-block btn-accent">Request Service Slot</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3-Step Process -->
-  <section class="py-16 bg-slate-100 border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold text-slate-900 mb-12">How It Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">1</div>
-          <h3 class="text-lg font-bold mb-2">Choose Service</h3>
-          <p class="text-slate-600 text-sm">Select the hardware, security, or web service you need assistance with.</p>
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="subheading">About Our Company</span>
+          <h2>Reliable Technology Services Centered Around Practical Results</h2>
+          <p>Based in Chow Kit, Kuala Lumpur, Sky Express & Solution provides turnkey security hardware, computer maintenance, and digital web design for residential and commercial customers.</p>
+          <p>We pride ourselves on practical solutions: we inspect your site, recommend only what you need, configure the system correctly, and provide clear customer support long after the installation is done.</p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Core Services</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Verified Setups</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">KL</span>
+              <span class="stat-label">Local Coverage</span>
+            </div>
+          </div>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">2</div>
-          <h3 class="text-lg font-bold mb-2">Submit Booking</h3>
-          <p class="text-slate-600 text-sm">Provide your preferred date, time slot, location, and requirement notes.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">3</div>
-          <h3 class="text-lg font-bold mb-2">Company Confirms</h3>
-          <p class="text-slate-600 text-sm">Our team verifies technician availability and contacts you to confirm the appointment.</p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Experienced Technicians</h4>
+            <p>Every camera, alarm, and door system is tested thoroughly before handover.</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Prompt Response</h4>
+            <p>Direct WhatsApp and phone channels ensure immediate confirmation and support.</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>Tailored Hardware</h4>
+            <p>From office entry security to budget-optimized PC builds, we tailor each job.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/8754081311?text=Hi%20Sky%20Express%20%26%20Solution,%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2">
-    <i class="fa-brands fa-whatsapp text-2xl"></i>
-    <span class="font-bold text-sm hidden md:inline">WhatsApp Us</span>
-  </a>
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">What We Do</span>
+        <h2>Professional Business & Residential Services</h2>
+        <p>Comprehensive security integration, system engineering, and modern web pages.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+          <h3>CCTV Camera Systems</h3>
+          <p>End-to-end installation, remote phone monitoring setup, camera upgrades, DVR/NVR replacement, and lens alignment.</p>
+          <ul class="service-specs">
+            <li>Indoor/Outdoor Dome & Bullet Cameras</li>
+            <li>Remote Mobile Viewing Setup</li>
+            <li>System Diagnostics & Maintenance</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire CCTV <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <h3>Door Access Control</h3>
+          <p>Electronic locks, card readers, RFID keys, and fingerprint authentication for office facilities, warehouses, and storage rooms.</p>
+          <ul class="service-specs">
+            <li>Magnetic Lock Systems (EM Locks)</li>
+            <li>Biometric & PIN Keypad Entry</li>
+            <li>Exit Buttons & Emergency Break-Glass</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire Door Access <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-bell"></i></div>
+          <h3>Security Alarm Systems</h3>
+          <p>Intrusion detection alarms, vibration sensors, sirens, and multi-zone commercial monitoring configurations.</p>
+          <ul class="service-specs">
+            <li>Door/Window Magnetic Sensors</li>
+            <li>Motion Detectors (PIR Sensors)</li>
+            <li>Siren & Battery Backup Upgrades</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire Alarms <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-computer"></i></div>
+          <h3>PC Assembly & OS Installation</h3>
+          <p>Custom PC rigs tailored for gaming, 3D rendering, or daily office productivity. Genuine Windows/Linux installation and driver tune-up.</p>
+          <ul class="service-specs">
+            <li>Custom Hardware Component Assembly</li>
+            <li>Clean OS Installation & Drivers</li>
+            <li>Thermal Paste & Cable Management</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire PC Build <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Page & Site Development</h3>
+          <p>Mobile-responsive landing pages and business profile websites engineered for lead capture, high speeds, and clean UX.</p>
+          <ul class="service-specs">
+            <li>Mobile & Tablet Responsive UI</li>
+            <li>Direct WhatsApp & Form Inquiries</li>
+            <li>Fast Static Performance (Cloudflare/Netlify)</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire Website <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Custom Web Solutions</h3>
+          <p>Interactive web interfaces, service dashboards, and customized dynamic tools built to streamline your business workflow.</p>
+          <ul class="service-specs">
+            <li>Custom API & Service Integrations</li>
+            <li>Product & Catalog Displays</li>
+            <li>Lead Generation Optimization</li>
+          </ul>
+          <a href="#booking" class="service-cta">Enquire Web Tools <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">How It Works</span>
+        <h2>Simple 3-Step Service Workflow</h2>
+      </div>
+      <div class="process-steps">
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <h4>Select Your Service</h4>
+          <p>Pick the security equipment, computer upgrade, or website project you need assistance with.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <h4>Submit Booking Details</h4>
+          <p>Provide your preferred date, location, and requirement notes through our instant booking request.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <h4>We Confirm & Deliver</h4>
+          <p>Our team verifies equipment availability, coordinates technician arrival, and executes the job.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <span class="subheading">Book An Appointment</span>
+          <h2>Request a Service Appointment</h2>
+          <p>Submit your preferred date and requirements. Because installation jobs require equipment checks and travel scheduling, our team will review and confirm your slot via WhatsApp or phone promptly.</p>
+          
+          <div class="booking-notice">
+            <i class="fa-solid fa-circle-info"></i>
+            <div>
+              <strong>Instant Coordination</strong>
+              <p>After filling the form, you can send the full details straight to our WhatsApp dispatch line for immediate confirmation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-box">
+          <form id="serviceBookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="serviceSelect">Service Category *</label>
+                <select id="serviceSelect" required>
+                  <option value="" disabled selected>Choose a Service</option>
+                  <option value="CCTV Camera Installation / Repair">CCTV Camera Installation / Repair</option>
+                  <option value="Door Access Control System">Door Access Control System</option>
+                  <option value="Security Alarm System">Security Alarm System</option>
+                  <option value="PC Assembly & OS Installation">PC Assembly & OS Installation</option>
+                  <option value="Web Page / Website Development">Web Page / Website Development</option>
+                  <option value="Custom Web Solutions">Custom Web Solutions</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="customerName">Full Name *</label>
+                <input type="text" id="customerName" placeholder="e.g. Tan Sri / John Doe" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customerPhone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="customerPhone" placeholder="e.g. +60 12 345 6789" required />
+              </div>
+              <div class="form-group">
+                <label for="customerEmail">Email Address (Optional)</label>
+                <input type="email" id="customerEmail" placeholder="e.g. name@example.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceAddress">Service Location / Address in KL *</label>
+              <input type="text" id="serviceAddress" placeholder="Street name, building, or area in Chow Kit / KL" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date *</label>
+                <input type="date" id="preferredDate" required />
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time Slot *</label>
+                <select id="preferredTime" required>
+                  <option value="" disabled selected>Select Time Slot</option>
+                  <option value="Morning (09:00 AM - 12:00 PM)">Morning (09:00 AM - 12:00 PM)</option>
+                  <option value="Afternoon (12:00 PM - 03:00 PM)">Afternoon (12:00 PM - 03:00 PM)</option>
+                  <option value="Late Afternoon (03:00 PM - 06:00 PM)">Late Afternoon (03:00 PM - 06:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceNotes">Requirement / Problem Description *</label>
+              <textarea id="serviceNotes" rows="3" placeholder="Describe the number of cameras, door lock type, PC specs needed, or website goals..." required></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="consentCheck" required />
+              <label for="consentCheck">I agree that Sky Express & Solution may contact me via WhatsApp/phone regarding this appointment request.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Confirm & Send via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & FAQ Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">Get In Touch</span>
+        <h2>Contact Information & FAQ</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Our Location</h4>
+          <p>Chow Kit, Kuala Lumpur, Malaysia</p>
+          <span class="contact-note">Serving KL & Klang Valley</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <h4>WhatsApp & Call</h4>
+          <p><a href="tel:8754081311">+8754081311</a></p>
+          <span class="contact-note">Monday – Saturday (9:00 AM - 6:00 PM)</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4>Email Inquiries</h4>
+          <p><a href="mailto:skyexpresssolution@gmail.com">skyexpresssolution@gmail.com</a></p>
+          <span class="contact-note">Formal quotations & proposals</span>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-container">
+        <h3 class="text-center">Frequently Asked Questions</h3>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you perform site surveys before CCTV or Door Access installation?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>Yes. For commercial premises or complete residential security systems, we inspect the wiring layout, ceiling access, and camera angles before recommending hardware.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How soon can my booking appointment be confirmed?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>Submitting the form triggers an instant WhatsApp draft. Once received, our team checks the technician schedule and confirms your slot within 1–2 hours during business hours.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can I customize PC components or provide my own parts for assembly?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>Yes. You can supply your own hardware for assembly and clean OS installation, or we can source and build the entire computer tailored to your budget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h4 class="text-white font-bold text-lg mb-3">Sky Express & Solution</h4>
-        <p class="text-sm leading-relaxed">Chow Kit, Kuala Lumpur, Malaysia</p>
-        <p class="text-sm mt-2">Email: skyexpresssolution@gmail.com</p>
-        <p class="text-sm">Phone: 8754081311</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-shield-halved"></i></span>
+          <span class="brand-title">Sky Express & Solution</span>
+        </div>
+        <p>Security surveillance, biometric access, alarm engineering, custom PC builds, and business websites in Kuala Lumpur.</p>
       </div>
-      <div>
-        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Quick Links</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="services.html" class="hover:text-white">Services</a></li>
-          <li><a href="booking.html" class="hover:text-white">Book Appointment</a></li>
-          <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
-          <li><a href="contact.html" class="hover:text-white">Contact & Location</a></li>
+
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Legal</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
-        </ul>
-        <p class="text-xs text-slate-500 mt-6">&copy; Sky Express & Solution. All rights reserved.</p>
+
+      <div class="footer-contact">
+        <h5>Direct Support</h5>
+        <p><i class="fa-solid fa-phone"></i> +8754081311</p>
+        <p><i class="fa-solid fa-envelope"></i> skyexpresssolution@gmail.com</p>
+        <p><i class="fa-solid fa-map-pin"></i> Chow Kit, Kuala Lumpur</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>&copy; 2026 Sky Express & Solution. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/8754081311?text=Hi%20Sky%20Express%20%26%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">Chat with us</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
